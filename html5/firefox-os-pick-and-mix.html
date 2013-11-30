@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<!-- <html lang="en-US"> -->
+<html lang="en-US" class="fade">
+<!-- 
+  ^ a class of "fade" makes slides fade smoothly into one another
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!-- 
+  If you want no numbers on the slides add a "nonumbers" class 
+  to the HTML element.
+  Adding a class of "fade" will make slides fade into another. 
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>10 Mandamentos do Firefox OS e a Primeira App</title>
+<!-- 
+  If you upload your slides to the web, ensure that you have 
+  a good title - this shows up in search results and social
+  media links
+ -->
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+  <style type="text/css">
+    div[id$='bullets'].slide > div::after {
+      content: 'For Information only, do NOT present';
+      background: rgba(200,0,0,0.5);
+      color: #fff;
+      position: absolute;
+      top: 20px;
+      right: 0;
+      padding: 5px 20px;
+      transform: rotate(90deg) translate(52%,-150px);
+      border-radius: 5px;
+    }
+    .full div[id$='bullets'].slide > div::after {
+      animation: wiggle alternate 1s infinite;
+    }
+    @keyframes wiggle {
+      from {
+        transform: rotate(90deg) translate(52%,-150px);
+      }
+      to {
+        transform: rotate(90deg) translate(52%,-160px);
+      }
+    }
+  </style>
+</head>
+<body class="list">
+
+  <header class="caption">
+    <h1>FirefoxOS: Os 10 Mandamentos e a Primeira App</h1>
+    <p class="footer">
+      {Mario Gasparoni}, 
+      { <a href="http://twitter.com/">@mariogasparoni</a> or 
+      <a href="mailto:you@email.com">mcgjunior@inf.ufrgs.br</a>}
+    </p>
+    <p class="footer">
+      {Vagner Ribas}, 
+      { <a href="http://twitter.com/">@vameri</a> or 
+      <a href="mailto:you@email.com">vameri@gmail.com</a>}
+    </p>
+  </header>
+  <aside class="talkdescription">
+    <p>mozilla.org, matehackers.org  . <button onclick="goFullScreen()">Go fullscreen</button></p>
+    <p class="abstract">
+      Noções básicas das características do FirefoxOS, juntamente com a construção
+      de um aplicativo que executa sobre plataformas html5, javascript, jQuery e CSS.
+      Além disso, teremos noções básicas sobre a estruturação necessária para a submissão
+      de aplicações para a Firefox MarketPlace.
+    </p>
+  </aside>
+
+<!-- 
+    Simply copy the whole block for each slide you want.
+  Special slides get extra classes. Each slide needs an ID 
+  to allow for bookmarking and target jumping.
+-->
+
+  <div id="cover" class="slide"><div>
+    <section>
+      <header>
+        <h2>Hello Torres! </h2>
+      </header>
+      <img src="pictures/hackday/logohackday.jpg" 
+           class="middle shadow" height="200"
+           alt="Hackday \o/ Ulbra Torres">
+      <small class="byline">
+        {Mario Gasparoni}, {Vagner Ribas}, {Hack Day Ulbra}, {Torres}, {11/2013}
+      </small>      
+    </section>
+  </div></div>
+
+<!-- end slide block -->
+
+<!-- ===================================================================
+1
+======================================================================== -->
+<div id="mandamentos" class="slide shout"><div>
+    <section>
+      <header>
+        <h2 style='font-size: 50px;'>Os <br>10 Mandamentos do <br>Firefox OS</h2>
+      </header>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+<!-- ===================================================================
+2
+======================================================================== -->
+   <div id="mandamento1" class="slide"><div>
+    <section>
+      <header>
+        <h2>HTML5</h2>
+      </header>
+      <ul class="longlist">
+        <li>Html + CSS + Javascript são plataformas consolidadas</li>
+        <!-- <img src="pictures/hackday/03.jpg" class="right" alt="javascript" > -->
+      </ul>      
+      
+    </section>
+  </div></div>
+
+<!-- ===================================================================
+3
+======================================================================== -->
+
+
+
+  
+   <div id="mandamento2" class="slide"><div>
+    <section>
+      <header>
+        <h2>Javascript</h2>
+      </header>
+      <ul class="longlist">
+        <li>Javascript é o motor da sua aplicação para Firefox OS</li>
+        <li>Ele é o passaporte principal para a API de Programação</li>
+        
+      </ul>
+      <img src="pictures/hackday/03.jpg" class="right" alt="javascript" height="200">
+      
+    </section>
+  </div></div>
+
+
+  <!-- ===================================================================
+4
+======================================================================== -->
+
+
+
+  
+   <div id="mandamento3" class="slide"><div>
+    <section>
+      <header>
+        <h2>Javascript</h2>
+      </header>
+      <ul class="longlist">
+        <li>Javascript é o motor da sua aplicação para Firefox OS</li>
+        <li>Ele é o passaporte principal para a API de Programação</li>
+        <li>Sem ele sua aplicação não é quase nada! É apenas uma idéia!</li>
+      </ul>
+      <img src="pictures/hackday/04.jpg" class="right" alt="javascript" height="200">
+      
+    </section>
+  </div></div>
+
+
+<!-- ===================================================================
+5
+======================================================================== -->
+<div id="mandamentos" class="slide shout"><div>
+    <section>
+      <header>
+        <h2 style='font-size: 40px;'>Oficina: <br>Primeira App Para Firefox OS</h2>
+      </header>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+
+<!-- ===================================================================
+5
+======================================================================== -->
+
+  
+   <div id="tools" class="slide"><div>
+    <section>
+      <header>
+        <h2>Ambiente de desenvolvimento</h2>
+      </header>
+      <ul class="longlist">
+        <li>Html + CSS + Javascript são plataformas consolidadas</li>
+        <li>Linguagens Interpretadas, não fortemente tipadas, flexibilizando a aplicação </li>
+        <li>Efeitos visuais utilizando puramente o browser, e não ferramentas adicionais</li>        
+        <li>PORTABILIDADE</li>
+        <li>Ambiente de desenvolvimento Open Source.</li>
+        <li>Ferramentas: Editor de Texto + Browser + Debugger .</li>
+      </ul>      
+      
+    </section>
+  </div></div>
+
+<!-- ===================================================================
+3
+======================================================================== -->
+
+  <div id="letsdoit" class="slide shout"><div>
+    <section>
+      <header>
+        <h2>Let's do it!</h2>
+      </header>
+    <footer class="notes">
+    </footer>
+    </section>
+  </div></div>
+
+
+<!-- ===================================================================
+4
+======================================================================== -->
+
+  
+   <div id="versionamento" class="slide"><div>
+    <section>
+      <header>
+        <h2>Versionamento</h2>
+      </header>
+      <ul class="longlist">
+        <li>Versionador: Git </li>
+        <li>Sugestão de ferramenta: GitHub</li>
+        <li><a href='github.com'>github.com</a></li>
+      </ul>
+      <ul>
+        <li>Tarefas:</li>
+        <li>1)Criação do repositório</li>
+        <li>2)Clonagem para a máquina local</li>
+        <li>3)Submissão de um código HTML5 (exemplo)</li>
+        <li>4)Visualização da página através dos servidores do GitHub</li>
+        
+      </ul>      
+      
+    </section>
+  </div></div>
+
+<!-- ===================================================================
+4
+======================================================================== -->
+
+  
+   <div id="diretorios_app" class="slide"><div>
+    <section>
+      <header>
+        <h2>Estrutura Básica de Diretórios</h2>
+      </header>
+      <ul class="longlist">
+        <li>css/</li>
+        <li>js/ </li>
+        <li>img/</li>
+        <li>index.html (OK)</li>
+        <li>manifest.webapp</li>
+      </ul> 
+
+      <ul>
+        <li>Tarefas:</li>
+        <li>1)Criação da estrutura básica de diretórios da nossa app</li>
+        <li>2)Criação do arquivo manifest (exemplo)</li>
+        <li>3)Instalação e visualização da App no simulador do firefox</li>
+        <li>4)Visualização da app</li>
+        
+      </ul>        
+      
+    </section>
+  </div></div>
+
+
+
+
+
+
+
+
+
+<!-- ===================================================================
+AND… I'M SPENT
+======================================================================== -->
+
+  <div id="obrigado" class="slide"><div>
+    <section>
+      <header>
+        <h2>Obrigado</h2>
+      </header>
+      <img src="pictures/mozillaoverview/redpanda.jpg" class="right" alt="Red panda (Firefox)">
+      <ul class="nobull">
+        <li>Os 10 Mandamentos e a Primeira App</li>
+        <li><strong>Firefox OS</strong></li>        
+        <li><strong>Slides</strong>: {slideurl}</li>
+      </ul>
+      <small class="credits">
+        <a href="http://www.flickr.com/photos/yortw/5798336827/">Photo by Yortw</a>
+      </small>
+
+    <footer class="notes">
+    </footer>
+
+    </section>
+  </div></div>
+
+  <!--
+    To hide progress bar from entire presentation
+    just remove “progress” element.
+    -->
+  <div class="progress"><div></div></div>
+  <script src="scripts/script.js"></script>
+  <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+</body>
+</html>
